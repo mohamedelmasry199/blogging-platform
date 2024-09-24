@@ -26,9 +26,11 @@ To test the API endpoints, you can use the following Postman collection:
 
 "https://winter-capsule-555145.postman.co/workspace/social-networking-app~9fccab93-1604-4aa3-9801-a1c07114acb3/collection/29187226-f22ff1af-d0d3-44ac-85d1-fde336aa233b?action=share&creator=29187226"
 This collection includes all the available API endpoints for testing.
-Documentation:
+<h2>Documentation:</h2>
 "https://documenter.getpostman.com/view/29187226/2sAXqv6MUs"
-Setup Instructions
+
+
+<h2>Setup Instructions:</h2>
 1. Prerequisites
 Ensure you have the following installed:
 
