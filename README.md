@@ -76,7 +76,7 @@ The application will be available at http://localhost:8000.
 
 
 
-Project Workflow Summary
+<h1>Project Workflow Summary:</h1>
 
 Form Request Adjustment:
 The initial step involved adjusting the form request to interact smoothly with the API. I created custom API Requests that extend Laravel's FormRequest. These requests ensure that incoming data is validated before being passed to the service layer.
