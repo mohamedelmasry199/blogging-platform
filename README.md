@@ -73,3 +73,45 @@ Run the application:
 php artisan serve
 The application will be available at http://localhost:8000.
 
+
+Project Workflow Summary
+
+Form Request Adjustment:
+The initial step involved adjusting the form request to interact smoothly with the API. I created custom API Requests that extend Laravel's FormRequest. These requests ensure that incoming data is validated before being passed to the service layer.
+Architecture Setup:
+
+To maintain clean and scalable code, I implemented a Service-Oriented Architecture using:
+Interfaces: To define the contracts for the functionality.
+Repositories: For data interaction with the database, following the Repository Pattern to abstract database logic.
+Services: Where the business logic resides. The services handle core application logic and interact with repositories.
+Controllers: The controllers receive the requests, pass them through the services, and return appropriate responses.
+Login and Registration Implementation:
+
+The first functional implementation focused on user authentication. I created the necessary form requests, interfaces, repositories, services, and controllers for:
+Registration: Allows authors to register by validating and storing their data in the database.
+Login: Enables authors to authenticate and generate a session token.
+Author Functionality (Article Management):
+
+After completing user authentication, I moved on to article management for authors, following the same architecture setup (Requests, Interfaces, Repositories, Services, Controllers). Key steps included:
+Creating Articles:
+I used a DTO (Data Transfer Object) to handle data manipulation and ensure clean data transfer between layers, making the code more maintainable and structured.
+Returning Data:
+I leveraged Laravel Resources to format the response data, ensuring that the API outputs were consistent and properly structured when returning article lists, view counts, and other information.
+Developed endpoints for authors to:
+Retrieve a list of their articles.
+Create new articles.
+Activate or deactivate an article.
+Make articles featured.
+
+Reader Functionality:
+Finally, I implemented reader functionalities, ensuring that users can interact with the content. Following the same architecture pattern, I created:
+Form requests for reader interactions.
+Resources to format responses, ensuring that reader-facing data, such as featured articles or article details, were returned in a consistent, structured format.
+Developed API endpoints for readers to:
+Retrieve a list of featured articles.
+View specific articles.
+Like or dislike articles.
+API Testing and Documentation:
+
+After implementing each major feature (Login, Registration, Article Management, Reader Functionality), I thoroughly tested the API using Postman. This ensured that all endpoints functioned as expected and matched the documented API specifications
+
