@@ -44,25 +44,16 @@ Clone the repository:
 git clone https://github.com/your-repository/blogging-platform.git
 cd blogging-platform
 Install dependencies:
-
-
-
 composer install
+
 Copy the environment file:
-
-
-
 cp .env.example .env
+
 Generate an application key:
-
-
-
 php artisan key:generate
 Set up the database:
 
 Open the .env file and configure your database settings:
-
-plaintext
 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -77,7 +68,6 @@ Run database migrations:
 php artisan migrate
 php artisn db:seed
 Run the application:
-
 
 
 php artisan serve
